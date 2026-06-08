@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>American Dream — The World's Most Ambitious Destination</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:ital,wght@0,200;0,300;0,400;0,500;1,200&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="main-nav">
+  <div class="nav-logo">AMERICAN DREAM</div>
+  <ul class="nav-links">
+    <li><a href="#intro" class="nav-link active" data-section="intro">Home</a></li>
+    <li><a href="#why" class="nav-link" data-section="why">Why Here</a></li>
+    <li><a href="#retail" class="nav-link" data-section="retail">Retail</a></li>
+    <li><a href="#luxury" class="nav-link" data-section="luxury">Luxury</a></li>
+    <li><a href="#dining" class="nav-link" data-section="dining">Dining</a></li>
+    <li><a href="#entertainment" class="nav-link" data-section="entertainment">Entertainment</a></li>
+    <li><a href="#events" class="nav-link" data-section="events">Events</a></li>
+    <li><a href="#contact" class="nav-link" data-section="contact">Partner</a></li>
+  </ul>
+  <button class="nav-cta" onclick="scrollToSection('contact')">Get Started</button>
+  <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE NAV OVERLAY -->
+<div class="mobile-nav-overlay" id="mobile-nav-overlay">
+  <ul>
+    <li><a href="#intro" onclick="closeMobileNav()">Home</a></li>
+    <li><a href="#why" onclick="closeMobileNav()">Why Here</a></li>
+    <li><a href="#retail" onclick="closeMobileNav()">Retail</a></li>
+    <li><a href="#luxury" onclick="closeMobileNav()">Luxury</a></li>
+    <li><a href="#dining" onclick="closeMobileNav()">Dining</a></li>
+    <li><a href="#entertainment" onclick="closeMobileNav()">Entertainment</a></li>
+    <li><a href="#events" onclick="closeMobileNav()">Events</a></li>
+    <li><a href="#contact" onclick="closeMobileNav()">Partner With Us</a></li>
+  </ul>
+</div>
+
+<!-- SECTION 1: CINEMATIC INTRO -->
+<section id="intro" class="section section-intro">
+  <div class="intro-video-bg">
+    <div class="intro-gradient-overlay"></div>
+    <!-- Animated SVG cityscape / abstract mega-structure -->
+    <div class="animated-bg" id="animated-bg"></div>
+  </div>
+
+  <div class="intro-content">
+    <div class="intro-eyebrow reveal-up delay-1">East Rutherford, New Jersey</div>
+    <h1 class="intro-headline reveal-up delay-2">
+      <span class="line">Not a Mall.</span>
+      <span class="line italic">A Universe.</span>
+    </h1>
+    <p class="intro-sub reveal-up delay-3">
+      3.5 million sq ft. 100K daily visitors. One address that changes everything.
+    </p>
+    <div class="intro-cta-row reveal-up delay-4">
+      <button class="btn-primary" onclick="scrollToSection('why')">Explore the Opportunity</button>
+      <button class="btn-ghost" onclick="openVideoModal()">
+        <span class="play-icon">▶</span> Watch Film
+      </button>
+    </div>
+  </div>
+
+  <div class="intro-scroll-hint">
+    <span>Scroll to explore</span>
+    <div class="scroll-line"></div>
+  </div>
+
+  <!-- Floating stats -->
+  <div class="floating-stat stat-1 reveal-fade delay-5">
+    <span class="stat-num">40M+</span>
+    <span class="stat-label">Annual Visitors</span>
+  </div>
+  <div class="floating-stat stat-2 reveal-fade delay-6">
+    <span class="stat-num">#1</span>
+    <span class="stat-label">Largest in the Americas</span>
+  </div>
+  <div class="floating-stat stat-3 reveal-fade delay-7">
+    <span class="stat-num">$5B</span>
+    <span class="stat-label">Total Investment</span>
+  </div>
+</section>
+
+<!-- SECTION 2: WHY THIS PROPERTY -->
+<section id="why" class="section section-why">
+  <div class="section-inner">
+    <div class="section-header reveal-up">
+      <div class="section-eyebrow">The Opportunity</div>
+      <h2 class="section-title">Why American Dream Is Different</h2>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-map-side reveal-left">
+        <div class="map-visual">
+          <div class="map-pulse-ring"></div>
+          <div class="map-pulse-ring delay"></div>
+          <div class="map-center-dot"></div>
+          <div class="map-label">American Dream</div>
+          <div class="map-sublabel">MetLife Stadium Complex, NJ</div>
+          <!-- Distance markers -->
+          <div class="map-marker m1">NYC<span>12 min</span></div>
+          <div class="map-marker m2">Newark<span>8 min</span></div>
+          <div class="map-marker m3">Philadelphia<span>90 min</span></div>
+          <div class="map-marker m4">Boston<span>4 hrs</span></div>
+          <div class="map-reach-circle c1"></div>
+          <div class="map-reach-circle c2"></div>
+          <div class="map-reach-circle c3"></div>
+        </div>
+      </div>
+
+      <div class="why-stats-side reveal-right">
+        <div class="why-stat-block">
+          <div class="wsb-num counter" data-target="40">0</div>
+          <div class="wsb-unit">Million+</div>
+          <div class="wsb-label">Projected Annual Visitors</div>
+        </div>
+        <div class="why-stat-block">
+          <div class="wsb-num counter" data-target="3">0</div>
+          <div class="wsb-unit">Million sq ft</div>
+          <div class="wsb-label">Total Leasable Area</div>
+        </div>
+        <div class="why-stat-block">
+          <div class="wsb-num counter" data-target="500">0</div>
+          <div class="wsb-unit">+</div>
+          <div class="wsb-label">Retail Tenants & Brands</div>
+        </div>
+        <div class="why-stat-block">
+          <div class="wsb-num counter" data-target="20">0</div>
+          <div class="wsb-unit">Million</div>
+          <div class="wsb-label">Tri-State Area Catchment</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="why-pillars reveal-up">
+      <div class="pillar">
+        <div class="pillar-icon">◈</div>
+        <div class="pillar-title">Unmatched Access</div>
+        <p>Direct NJ Transit connection, 13,000+ on-site parking spaces, and 12 minutes from Manhattan. No destination in the region is this reachable.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">◈</div>
+        <div class="pillar-title">Mixed-Use at Scale</div>
+        <p>Retail, dining, luxury, entertainment, hospitality, and live events — all under one roof, year-round. The property never sleeps.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">◈</div>
+        <div class="pillar-title">Captive Audience</div>
+        <p>Visitors spend an average of 4–6 hours on property. That's not a shopping trip. That's a day experience — and an enormous sales opportunity.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">◈</div>
+        <div class="pillar-title">Cultural Platform</div>
+        <p>From Formula 1 activations to Rihanna's Super Bowl prep, American Dream is where culture happens. Your brand belongs in that conversation.</p>
+      </div>
+    </div>
+
+    <!-- Demographics bar chart -->
+    <div class="demo-section reveal-up">
+      <h3 class="demo-title">Visitor Demographics</h3>
+      <div class="demo-bars">
+        <div class="demo-bar-row">
+          <span class="demo-bar-label">Household Income $100K+</span>
+          <div class="demo-bar-wrap"><div class="demo-bar" data-width="68"><span>68%</span></div></div>
+        </div>
+        <div class="demo-bar-row">
+          <span class="demo-bar-label">Ages 18–44</span>
+          <div class="demo-bar-wrap"><div class="demo-bar" data-width="54"><span>54%</span></div></div>
+        </div>
+        <div class="demo-bar-row">
+          <span class="demo-bar-label">International Visitors</span>
+          <div class="demo-bar-wrap"><div class="demo-bar" data-width="22"><span>22%</span></div></div>
+        </div>
+        <div class="demo-bar-row">
+          <span class="demo-bar-label">Repeat Visitors (Monthly)</span>
+          <div class="demo-bar-wrap"><div class="demo-bar" data-width="41"><span>41%</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3: RETAIL -->
+<section id="retail" class="section section-retail">
+  <div class="section-inner">
+    <div class="section-header reveal-up">
+      <div class="section-eyebrow">Commercial Real Estate</div>
+      <h2 class="section-title">The Retail Opportunity</h2>
+      <p class="section-desc">From flagship stores to pop-up activations, American Dream offers formats for every retail strategy — in a market where 20 million consumers live within 30 miles.</p>
+    </div>
+
+    <div class="retail-cards reveal-stagger">
+      <div class="retail-card rc-flagship">
+        <div class="rc-visual">
+          <div class="rc-bg-pattern pattern-1"></div>
+        </div>
+        <div class="rc-content">
+          <div class="rc-tag">Flagship</div>
+          <h3>Define Your Territory</h3>
+          <p>Anchor-level positions in the highest-traffic corridors. Full-floor flagship formats from 5,000–25,000 sq ft.</p>
+          <div class="rc-stats">
+            <span>25,000 sq ft max</span>
+            <span>Class-A corridors</span>
+          </div>
+          <button class="rc-btn" onclick="openLeaseModal('flagship')">Inquire About Leasing →</button>
+        </div>
+      </div>
+
+      <div class="retail-card rc-boutique">
+        <div class="rc-visual">
+          <div class="rc-bg-pattern pattern-2"></div>
+        </div>
+        <div class="rc-content">
+          <div class="rc-tag">Boutique</div>
+          <h3>Precision Positioning</h3>
+          <p>Curated boutique space for contemporary and lifestyle brands. High visibility, surrounded by complementary tenants.</p>
+          <div class="rc-stats">
+            <span>500–3,000 sq ft</span>
+            <span>Category clustering</span>
+          </div>
+          <button class="rc-btn" onclick="openLeaseModal('boutique')">Inquire About Leasing →</button>
+        </div>
+      </div>
+
+      <div class="retail-card rc-popup">
+        <div class="rc-visual">
+          <div class="rc-bg-pattern pattern-3"></div>
+        </div>
+        <div class="rc-content">
+          <div class="rc-tag">Pop-Up / Temporary</div>
+          <h3>Test, Launch, Activate</h3>
+          <p>Short-term formats from 30 days. Perfect for launches, limited collections, brand moments, and market testing.</p>
+          <div class="rc-stats">
+            <span>30-day minimum</span>
+            <span>Flexible formats</span>
+          </div>
+          <button class="rc-btn" onclick="openLeaseModal('popup')">Inquire About Leasing →</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Key tenants ticker -->
+    <div class="tenant-ticker-wrap reveal-up">
+      <div class="ticker-label">Current Tenants Include</div>
+      <div class="tenant-ticker">
+        <div class="ticker-track" id="ticker-track">
+          <span>Saks Fifth Avenue</span>
+          <span>·</span>
+          <span>Zara</span>
+          <span>·</span>
+          <span>H&M</span>
+          <span>·</span>
+          <span>Apple</span>
+          <span>·</span>
+          <span>Primark</span>
+          <span>·</span>
+          <span>Uniqlo</span>
+          <span>·</span>
+          <span>Nike</span>
+          <span>·</span>
+          <span>Aritzia</span>
+          <span>·</span>
+          <span>Lululemon</span>
+          <span>·</span>
+          <span>Samsung</span>
+          <span>·</span>
+          <span>Bath & Body Works</span>
+          <span>·</span>
+          <span>Victoria's Secret</span>
+          <span>·</span>
+          <span>Mango</span>
+          <span>·</span>
+          <span>Pandora</span>
+          <span>·</span>
+          <span>Skechers</span>
+          <span>·</span>
+          <span>Saks Fifth Avenue</span>
+          <span>·</span>
+          <span>Zara</span>
+          <span>·</span>
+          <span>H&M</span>
+          <span>·</span>
+          <span>Apple</span>
+          <span>·</span>
+          <span>Primark</span>
+          <span>·</span>
+          <span>Uniqlo</span>
+          <span>·</span>
+          <span>Nike</span>
+          <span>·</span>
+          <span>Aritzia</span>
+          <span>·</span>
+          <span>Lululemon</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4: LUXURY -->
+<section id="luxury" class="section section-luxury">
+  <div class="luxury-split">
+    <div class="luxury-text-side reveal-left">
+      <div class="section-eyebrow light">The Luxury Wing</div>
+      <h2 class="section-title light">Where Prestige<br><em>Finds Its Address</em></h2>
+      <p class="luxury-body">The dedicated luxury wing at American Dream redefines what premium retail looks like in the tri-state area. Floor-to-ceiling architectural grandeur, exclusive access programming, and a clientele that arrives with intent to purchase.</p>
+      <ul class="luxury-bullets">
+        <li>Dedicated high-end corridor with architectural distinction</li>
+        <li>Concierge services and VIP programming</li>
+        <li>Private event access for brand activations</li>
+        <li>Category exclusivity agreements available</li>
+        <li>Adjacent to Saks Fifth Avenue anchor</li>
+      </ul>
+      <button class="btn-primary light" onclick="openLeaseModal('luxury')">Explore Luxury Leasing</button>
+    </div>
+    <div class="luxury-visual-side reveal-right">
+      <div class="luxury-gallery">
+        <div class="lg-main">
+          <div class="lg-main-inner">
+            <div class="luxury-placeholder lp-1">
+              <div class="lp-shimmer"></div>
+              <span>Luxury Atrium</span>
+            </div>
+          </div>
+        </div>
+        <div class="lg-secondary">
+          <div class="lg-sec-item">
+            <div class="luxury-placeholder lp-2">
+              <div class="lp-shimmer"></div>
+              <span>Flagship Entrance</span>
+            </div>
+          </div>
+          <div class="lg-sec-item">
+            <div class="luxury-placeholder lp-3">
+              <div class="lp-shimmer"></div>
+              <span>VIP Lounge</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 5: DINING -->
+<section id="dining" class="section section-dining">
+  <div class="section-inner">
+    <div class="section-header reveal-up">
+      <div class="section-eyebrow">Food & Lifestyle</div>
+      <h2 class="section-title">Dining as Destination</h2>
+      <p class="section-desc">150+ dining options spanning fast casual to Michelin-adjacent. Food isn't an afterthought here — it's a primary draw that extends dwell time and drives repeat visits.</p>
+    </div>
+
+    <div class="dining-showcase reveal-up">
+      <div class="dining-hero-stat">
+        <div class="dhs-num">150+</div>
+        <div class="dhs-label">Dining Options</div>
+      </div>
+      <div class="dining-categories">
+        <div class="dining-cat dc-active" data-cat="all">All</div>
+        <div class="dining-cat" data-cat="fine">Fine Dining</div>
+        <div class="dining-cat" data-cat="casual">Casual</div>
+        <div class="dining-cat" data-cat="fast">Fast Casual</div>
+        <div class="dining-cat" data-cat="international">International</div>
+      </div>
+    </div>
+
+    <div class="dining-grid reveal-stagger">
+      <div class="dining-card" data-cat="casual">
+        <div class="dc-image dc-img1"></div>
+        <div class="dc-info">
+          <div class="dc-tag">Flagship Restaurant</div>
+          <h4>Nobu</h4>
+          <p>Celebrity chef Japanese dining — one of American Dream's headline F&B anchors.</p>
+        </div>
+      </div>
+      <div class="dining-card" data-cat="fast">
+        <div class="dc-image dc-img2"></div>
+        <div class="dc-info">
+          <div class="dc-tag">Food Hall</div>
+          <h4>The Great Hall</h4>
+          <p>40+ fast-casual concepts in a sprawling, architecturally stunning food hall environment.</p>
+        </div>
+      </div>
+      <div class="dining-card" data-cat="international">
+        <div class="dc-image dc-img3"></div>
+        <div class="dc-info">
+          <div class="dc-tag">International</div>
+          <h4>Global Kitchen</h4>
+          <p>Curated global cuisine representing 20+ culinary traditions, reflecting our international visitor base.</p>
+        </div>
+      </div>
+      <div class="dining-card" data-cat="fine">
+        <div class="dc-image dc-img4"></div>
+        <div class="dc-info">
+          <div class="dc-tag">Fine Dining</div>
+          <h4>The Crown Room</h4>
+          <p>Premium dining with views of the entertainment complex. Available for private events and buyouts.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="dining-cta reveal-up">
+      <p>Interested in an F&B concept, ghost kitchen, or food hall stall?</p>
+      <button class="btn-primary" onclick="openLeaseModal('dining')">Explore F&B Opportunities</button>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 6: ENTERTAINMENT -->
+<section id="entertainment" class="section section-entertainment">
+  <div class="ent-intro reveal-up">
+    <div class="section-eyebrow light">Attractions & Entertainment</div>
+    <h2 class="section-title light">The Reason<br><em>They Come Back</em></h2>
+    <p class="ent-sub">No other retail destination in the Americas offers entertainment at this scale. American Dream is the destination — retail is part of the journey.</p>
+  </div>
+
+  <div class="ent-marquee reveal-up">
+    <div class="ent-item active" data-ent="ski">
+      <div class="ent-card">
+        <div class="ent-icon">⛷</div>
+        <div class="ent-card-content">
+          <h3>Big SNOW Indoor Ski Resort</h3>
+          <p>America's only indoor ski and snowboard resort. 180,000 sq ft of year-round winter sports — a true global first.</p>
+          <div class="ent-stats-row">
+            <span>180,000 sq ft</span>
+            <span>America's Only</span>
+            <span>Year-Round</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ent-item" data-ent="theme">
+      <div class="ent-card">
+        <div class="ent-icon">🎢</div>
+        <div class="ent-card-content">
+          <h3>Nickelodeon Universe</h3>
+          <p>The Western Hemisphere's largest indoor theme park. 35 rides and attractions across 8 acres of entertainment.</p>
+          <div class="ent-stats-row">
+            <span>8 Acres Indoor</span>
+            <span>35 Rides</span>
+            <span>Largest in W. Hemisphere</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ent-item" data-ent="water">
+      <div class="ent-card">
+        <div class="ent-icon">🏊</div>
+        <div class="ent-card-content">
+          <h3>DreamWorks Water Park</h3>
+          <p>The largest indoor waterpark in North America. 15 waterslides, wave pools, and surf experience under a climate-controlled dome.</p>
+          <div class="ent-stats-row">
+            <span>North America's Largest</span>
+            <span>Climate Controlled</span>
+            <span>Year-Round</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ent-item" data-ent="golf">
+      <div class="ent-card">
+        <div class="ent-icon">⛳</div>
+        <div class="ent-card-content">
+          <h3>SEA LIFE Aquarium</h3>
+          <p>Immersive ocean experience featuring thousands of sea creatures and walk-through underwater tunnels.</p>
+          <div class="ent-stats-row">
+            <span>Walk-Through Tunnels</span>
+            <span>Interactive Zones</span>
+            <span>Family Destination</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ent-item" data-ent="ice">
+      <div class="ent-card">
+        <div class="ent-icon">⛸</div>
+        <div class="ent-card-content">
+          <h3>Ice Skating Rink</h3>
+          <p>NHL-regulation indoor ice rink open year-round. Events, public skating, lessons, and private bookings available.</p>
+          <div class="ent-stats-row">
+            <span>NHL Regulation</span>
+            <span>Public & Private</span>
+            <span>Year-Round</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ent-nav reveal-up">
+    <button class="ent-nav-btn active" data-target="ski">Big SNOW</button>
+    <button class="ent-nav-btn" data-target="theme">Nick Universe</button>
+    <button class="ent-nav-btn" data-target="water">Water Park</button>
+    <button class="ent-nav-btn" data-target="golf">SEA LIFE</button>
+    <button class="ent-nav-btn" data-target="ice">Ice Rink</button>
+  </div>
+</section>
+
+<!-- SECTION 7: EVENTS -->
+<section id="events" class="section section-events">
+  <div class="section-inner">
+    <div class="section-header reveal-up">
+      <div class="section-eyebrow">Live Events & Brand Platform</div>
+      <h2 class="section-title">The Stage Is Set.<br><em>What Will You Create?</em></h2>
+      <p class="section-desc">American Dream isn't just a venue — it's a platform. Concerts, brand activations, product launches, corporate retreats, and cultural moments happen here at a scale no other property can match.</p>
+    </div>
+
+    <!-- Event types -->
+    <div class="event-types reveal-stagger">
+      <div class="event-type">
+        <div class="et-visual et-concerts">
+          <div class="et-overlay">
+            <h3>Concerts &<br>Live Music</h3>
+            <p>Multiple indoor venues, from intimate 500-seat rooms to 3,000-capacity arena-style spaces.</p>
+            <button onclick="openEventModal('concerts')" class="et-btn">Book Inquiry →</button>
+          </div>
+        </div>
+      </div>
+      <div class="event-type">
+        <div class="et-visual et-brand">
+          <div class="et-overlay">
+            <h3>Brand<br>Activations</h3>
+            <p>High-traffic corridors, custom-built activation spaces, and 40M impressions annually.</p>
+            <button onclick="openEventModal('activation')" class="et-btn">Book Inquiry →</button>
+          </div>
+        </div>
+      </div>
+      <div class="event-type">
+        <div class="et-visual et-corporate">
+          <div class="et-overlay">
+            <h3>Corporate<br>Events</h3>
+            <p>Convention-grade space, premium catering, AV infrastructure, and dedicated event staff.</p>
+            <button onclick="openEventModal('corporate')" class="et-btn">Book Inquiry →</button>
+          </div>
+        </div>
+      </div>
+      <div class="event-type">
+        <div class="et-visual et-launch">
+          <div class="et-overlay">
+            <h3>Product<br>Launches</h3>
+            <p>Unrivaled footfall and media exposure. Make your launch unmissable.</p>
+            <button onclick="openEventModal('launch')" class="et-btn">Book Inquiry →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Venue specs -->
+    <div class="venue-specs reveal-up">
+      <h3 class="vs-title">Venue Capabilities</h3>
+      <div class="vs-grid">
+        <div class="vs-item">
+          <div class="vs-icon">🏟</div>
+          <div class="vs-num">3,000</div>
+          <div class="vs-label">Max Capacity (Indoor Arena)</div>
+        </div>
+        <div class="vs-item">
+          <div class="vs-icon">🎤</div>
+          <div class="vs-num">500–3K</div>
+          <div class="vs-label">Flexible Venue Configurations</div>
+        </div>
+        <div class="vs-item">
+          <div class="vs-icon">📺</div>
+          <div class="vs-num">Full</div>
+          <div class="vs-label">Broadcast & Production Rig</div>
+        </div>
+        <div class="vs-item">
+          <div class="vs-icon">🎯</div>
+          <div class="vs-num">8</div>
+          <div class="vs-label">Dedicated Activation Zones</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Past highlights -->
+    <div class="past-events reveal-up">
+      <h3 class="pe-title">Platform Highlights</h3>
+      <div class="pe-grid">
+        <div class="pe-item">
+          <div class="pe-year">2024</div>
+          <div class="pe-name">Formula 1 Grand Prix Activation</div>
+          <div class="pe-desc">Multi-day F1 brand experience in partnership with the NJ Grand Prix</div>
+        </div>
+        <div class="pe-item">
+          <div class="pe-year">2023</div>
+          <div class="pe-name">Rihanna Super Bowl Media Event</div>
+          <div class="pe-desc">Global media moment hosted at American Dream in advance of the Super Bowl halftime show</div>
+        </div>
+        <div class="pe-item">
+          <div class="pe-year">2023</div>
+          <div class="pe-name">New York Fashion Week Pop-Ups</div>
+          <div class="pe-desc">Multiple designer activations during NYFW season, drawing international press</div>
+        </div>
+        <div class="pe-item">
+          <div class="pe-year">2022</div>
+          <div class="pe-name">World Cup Fan Zone</div>
+          <div class="pe-desc">Official FIFA fan zone for the 2022 World Cup, with live screens, global food, and merchandise</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 8: SPONSORSHIP MODULE -->
+<section id="sponsorship" class="section section-sponsorship">
+  <div class="section-inner">
+    <div class="section-header reveal-up">
+      <div class="section-eyebrow">Partnership & Sponsorship</div>
+      <h2 class="section-title">Your Brand,<br><em>At the Center of Everything</em></h2>
+    </div>
+
+    <div class="sponsor-tiers reveal-stagger">
+      <div class="sponsor-tier st-presenting">
+        <div class="st-badge">Presenting Partner</div>
+        <h3>Title Sponsorship</h3>
+        <p>Naming rights, destination-wide visibility, first-tier digital placement, and category exclusivity.</p>
+        <ul>
+          <li>Property naming rights (zone or venue)</li>
+          <li>All digital + physical placement</li>
+          <li>Category exclusivity guaranteed</li>
+          <li>Annual programming integration</li>
+          <li>Custom branded experience space</li>
+        </ul>
+        <button class="st-btn" onclick="openSponsorModal('presenting')">Request Deck →</button>
+      </div>
+      <div class="sponsor-tier st-premiere">
+        <div class="st-badge">Premiere Partner</div>
+        <h3>Entertainment Sponsorship</h3>
+        <p>Anchor sponsorship of a specific attraction or event series, with co-branded programming.</p>
+        <ul>
+          <li>Attraction or event-series naming</li>
+          <li>High-traffic zone placement</li>
+          <li>Digital and experiential rights</li>
+          <li>Quarterly programming inclusion</li>
+        </ul>
+        <button class="st-btn" onclick="openSponsorModal('premiere')">Request Deck →</button>
+      </div>
+      <div class="sponsor-tier st-activation">
+        <div class="st-badge">Activation Partner</div>
+        <h3>Brand Activation</h3>
+        <p>Flexible campaign and activation partnerships. From seasonal programs to one-time moments.</p>
+        <ul>
+          <li>Pop-up activation space</li>
+          <li>Social amplification package</li>
+          <li>On-property media placements</li>
+          <li>Custom durations available</li>
+        </ul>
+        <button class="st-btn" onclick="openSponsorModal('activation')">Request Deck →</button>
+      </div>
+    </div>
+
+    <div class="sponsor-reach reveal-up">
+      <div class="sr-title">Sponsorship Reach</div>
+      <div class="sr-stats">
+        <div class="sr-stat">
+          <div class="sr-num">40M</div>
+          <div class="sr-label">Annual Visitors</div>
+        </div>
+        <div class="sr-stat">
+          <div class="sr-num">500M+</div>
+          <div class="sr-label">Social Impressions / yr</div>
+        </div>
+        <div class="sr-stat">
+          <div class="sr-num">120+</div>
+          <div class="sr-label">Media Partners</div>
+        </div>
+        <div class="sr-stat">
+          <div class="sr-num">12</div>
+          <div class="sr-label">Minutes from Times Square</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 9: CONTACT / CTA -->
+<section id="contact" class="section section-contact">
+  <div class="contact-inner">
+    <div class="contact-text reveal-up">
+      <div class="section-eyebrow light">Let's Talk</div>
+      <h2 class="contact-headline">Ready to Be Part<br>of <em>American Dream</em>?</h2>
+      <p class="contact-sub">Whether you're exploring a lease, planning an activation, or booking an event — our commercial team is ready to show you what's possible.</p>
+    </div>
+
+    <div class="contact-cards reveal-stagger">
+      <div class="contact-card" onclick="openContactForm('leasing')">
+        <div class="cc-icon">🏪</div>
+        <h3>Retail Leasing</h3>
+        <p>Explore flagship, boutique, and pop-up opportunities across all retail categories.</p>
+        <div class="cc-cta">Start a Conversation →</div>
+      </div>
+      <div class="contact-card" onclick="openContactForm('sponsorship')">
+        <div class="cc-icon">🤝</div>
+        <h3>Sponsorship & Partnerships</h3>
+        <p>Brand partnerships, naming rights, and co-marketing programs at scale.</p>
+        <div class="cc-cta">Get the Media Kit →</div>
+      </div>
+      <div class="contact-card" onclick="openContactForm('events')">
+        <div class="cc-icon">🎤</div>
+        <h3>Events & Venue Booking</h3>
+        <p>Concerts, activations, corporate events, launches, and more.</p>
+        <div class="cc-cta">Check Availability →</div>
+      </div>
+    </div>
+
+    <div class="contact-form-wrap reveal-up" id="contact-form-wrap">
+      <form class="contact-form" id="contact-form" onsubmit="handleFormSubmit(event)">
+        <h3 class="cf-title" id="cf-title">Start the Conversation</h3>
+        <input type="hidden" id="cf-type" value="">
+        <div class="cf-row">
+          <div class="cf-field">
+            <label>First Name</label>
+            <input type="text" placeholder="Jane" required />
+          </div>
+          <div class="cf-field">
+            <label>Last Name</label>
+            <input type="text" placeholder="Smith" required />
+          </div>
+        </div>
+        <div class="cf-row">
+          <div class="cf-field">
+            <label>Company</label>
+            <input type="text" placeholder="Brand Name" required />
+          </div>
+          <div class="cf-field">
+            <label>Email</label>
+            <input type="email" placeholder="jane@brand.com" required />
+          </div>
+        </div>
+        <div class="cf-field full">
+          <label>Tell us about your interest</label>
+          <textarea placeholder="Describe what you're looking for..." rows="4"></textarea>
+        </div>
+        <div class="cf-row cf-bottom">
+          <div class="cf-field">
+            <label>Inquiry Type</label>
+            <select id="cf-select">
+              <option value="leasing">Retail Leasing</option>
+              <option value="sponsorship">Sponsorship / Partnership</option>
+              <option value="events">Event Booking</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <button type="submit" class="btn-primary">Send Inquiry</button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-left">
+      <div class="footer-logo">AMERICAN DREAM</div>
+      <div class="footer-tagline">East Rutherford, New Jersey</div>
+    </div>
+    <div class="footer-right">
+      <span>americandream.com</span>
+      <span>commercial@americandream.com</span>
+      <span>© 2025 American Dream Mall</span>
+    </div>
+  </footer>
+</section>
+
+<!-- VIDEO MODAL -->
+<div class="modal-overlay" id="video-modal" onclick="closeVideoModal()">
+  <div class="video-modal-inner" onclick="event.stopPropagation()">
+    <button class="modal-close" onclick="closeVideoModal()">✕</button>
+    <div class="video-embed-wrap">
+      <iframe id="yt-embed" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+<!-- LEASE / EVENT MODAL -->
+<div class="modal-overlay" id="cta-modal">
+  <div class="cta-modal-inner" onclick="event.stopPropagation()">
+    <button class="modal-close" onclick="closeCTAModal()">✕</button>
+    <div id="cta-modal-content"></div>
+  </div>
+</div>
+
+<!-- FORM SUCCESS -->
+<div class="form-success-toast" id="form-success-toast">
+  <span>✓</span> Your inquiry has been sent. Our team will be in touch within 24 hours.
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
