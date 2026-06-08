@@ -8,6 +8,11 @@
 
 <br>
 
+🌐 **Live Demo:** https://startling-strudel-5a25ae.netlify.app/
+
+
+<br>
+
 **HTML • CSS • JavaScript • Responsive Design • Interactive Storytelling**
 
 </div>
@@ -16,37 +21,31 @@
 
 # 🌟 Overview
 
-American Dream is more than a shopping mall—it's a world-class destination that combines luxury retail, entertainment, attractions, dining, hospitality, and large-scale events under one roof.
+American Dream is more than a shopping mall—it's one of North America's largest entertainment, retail, dining, and lifestyle destinations.
 
-This project reimagines the traditional sales presentation as a fully interactive browser-based experience designed for:
+This project reimagines a traditional sales presentation as a premium interactive digital experience designed to engage potential tenants, luxury brands, sponsors, and event partners through immersive storytelling and modern web design.
 
-* 🏬 Retail Tenants
-* 💎 Luxury Brands
-* 🤝 Corporate Sponsors
-* 🎤 Event Organizers
-* 🎯 Marketing & Activation Partners
-
-The platform enables stakeholders to explore leasing opportunities, sponsorship programs, entertainment offerings, and event capabilities through immersive storytelling and modern web design.
+The platform enables users to explore business opportunities, visitor reach, premium retail experiences, entertainment attractions, dining concepts, and partnership programs through an elegant, responsive interface.
 
 ---
 
 # 🎯 Project Objective
 
-Traditional sales presentations often rely on PDFs, spreadsheets, videos, and verbal explanations.
+Traditional sales decks often rely on PDFs and static presentations.
 
-This project was built to replace that fragmented process with a premium digital experience that:
+This project transforms that approach into an engaging digital experience that:
 
-✅ Captures attention instantly
+✅ Captures attention immediately
 
-✅ Communicates scale and opportunity
-
-✅ Creates emotional engagement
+✅ Communicates scale and business opportunity
 
 ✅ Encourages self-guided exploration
 
-✅ Drives leasing, sponsorship, and event conversations
+✅ Creates emotional engagement through storytelling
 
-✅ Works both as a live sales tool and standalone experience
+✅ Showcases multiple business verticals
+
+✅ Works across desktop, tablet, and mobile devices
 
 ---
 
@@ -54,39 +53,43 @@ This project was built to replace that fragmented process with a premium digital
 
 ### 🎬 Cinematic Landing Experience
 
-High-impact hero section designed to immediately communicate ambition, scale, and business opportunity.
+Luxury-inspired hero section with immersive visual storytelling.
+
+### 📍 Strategic Market Positioning
+
+Highlights location advantages, audience demographics, and market reach.
 
 ### 🏬 Retail Opportunities
 
-Showcases flagship retail spaces, boutique concepts, and pop-up activations.
+Showcases flagship stores, boutique concepts, and pop-up activations.
 
 ### 💎 Luxury District
 
-Premium positioning designed for luxury and high-end retail brands.
+Premium positioning for luxury and high-end retail brands.
 
-### 🍽️ Dining & Lifestyle
+### 🍽️ Dining Experiences
 
-Highlights destination restaurants, food halls, and experiential dining concepts.
+Destination restaurants, food halls, and lifestyle-driven dining concepts.
 
-### 🎡 Entertainment Platform
+### 🎡 Entertainment Ecosystem
 
-Features attractions, activations, concerts, and visitor experiences.
+Visitor attractions, experiential destinations, and audience engagement opportunities.
 
 ### 🎤 Events & Activations
 
-Dedicated opportunities for product launches, corporate events, sponsorships, and live performances.
+Corporate events, concerts, sponsorship activations, and product launches.
 
 ### 🤝 Partnership Opportunities
 
-Strategic sponsorship and brand collaboration pathways.
+Strategic brand collaboration and sponsorship pathways.
 
-### 📱 Responsive Design
+### 📱 Fully Responsive Design
 
-Optimized for desktop, tablet, and mobile devices.
+Optimized across desktop, tablet, and mobile devices.
 
-### ⚡ Performance Focused
+### ⚡ Performance Optimized
 
-Fast loading, lightweight architecture, and optimized user experience.
+Lightweight architecture with smooth animations and fast loading.
 
 ---
 
@@ -94,35 +97,35 @@ Fast loading, lightweight architecture, and optimized user experience.
 
 ## 🏠 Home
 
-Impactful introduction with key metrics and destination highlights.
+Premium introduction highlighting destination scale and visitor reach.
 
 ## 📍 Why Here
 
-Demographics, market reach, accessibility, and commercial advantages.
+Market demographics, accessibility, and business advantages.
 
 ## 🏬 Retail
 
-Flagship opportunities, boutique leasing, and pop-up activations.
+Flagship opportunities, boutiques, and temporary activations.
 
 ## 💎 Luxury
 
-Luxury positioning and premium customer engagement.
+Luxury retail positioning and premium customer engagement.
 
 ## 🍽️ Dining
 
-Destination restaurants and experiential food concepts.
+Restaurants, food halls, and culinary experiences.
 
 ## 🎡 Entertainment
 
-Visitor attractions and audience engagement opportunities.
+Attractions, experiences, and visitor engagement opportunities.
 
 ## 🎤 Events
 
-Concerts, conventions, activations, and corporate experiences.
+Concerts, corporate events, conventions, and activations.
 
 ## 🤝 Partners
 
-Business development and sponsorship opportunities.
+Sponsorship opportunities and strategic collaborations.
 
 ---
 
@@ -142,9 +145,10 @@ Business development and sponsorship opportunities.
 # 📂 Project Structure
 
 ```text
-american-dream-deck/
+American-Dream-Deck/
 │
 ├── index.html
+│
 ├── css/
 │   └── main.css
 │
@@ -152,44 +156,40 @@ american-dream-deck/
 │   └── main.js
 │
 ├── assets/
-│   ├── images/
-│   └── media/
+│   └── images/
 │
 ├── netlify.toml
+├── vercel.json
 └── README.md
 ```
-
----
 
 # 🚀 Getting Started
 
 ## Clone Repository
 
 ```bash
-git clone https://github.com/your-username/american-dream-deck.git
+git clone https://github.com/Deepkuamr-9/American-Dream-Deck.git
 ```
 
 ```bash
-cd american-dream-deck
+cd American-Dream-Deck
 ```
-
----
 
 ## Run Locally
 
-Using VS Code:
+### Option 1: VS Code Live Server
 
-```bash
+```text
 Right Click → Open with Live Server
 ```
 
-Or:
+### Option 2: Python Local Server
 
 ```bash
 python -m http.server 8000
 ```
 
-Then open:
+Open:
 
 ```text
 http://localhost:8000
@@ -199,11 +199,11 @@ http://localhost:8000
 
 # 🌐 Live Demo
 
-### Netlify Deployment
+### 🚀 Production Deployment
 
-```text
-Add Your Netlify URL Here
-```
+🔗 https://startling-strudel-5a25ae.netlify.app/
+
+Explore the complete interactive sales experience online.
 
 ---
 
@@ -212,31 +212,32 @@ Add Your Netlify URL Here
 The visual direction combines inspiration from:
 
 * Luxury brand experiences
-* Interactive Digidecks
+* Modern digital sales decks
 * Entertainment destinations
-* Premium destination marketing platforms
+* Premium destination marketing websites
 
-Core design principles:
+Core principles include:
 
 * Minimalist Interface
-* Premium Visual Quality
-* Immersive Storytelling
-* Business-Focused User Journey
-* High-End User Experience
+* Premium Visual Identity
+* Interactive Storytelling
+* Business-Focused Navigation
+* Immersive User Experience
 
 ---
 
 # 🤖 AI Utilization
 
-AI tools were leveraged throughout the project to accelerate:
+AI tools were leveraged throughout the project for:
 
 * Content ideation
 * Design exploration
-* Asset sourcing
 * UX refinement
-* Presentation structure development
+* Storytelling structure
+* Visual inspiration
+* Rapid prototyping
 
-Final implementation, customization, responsiveness, optimization, and integration were completed manually.
+Final implementation, responsiveness, optimization, debugging, and customization were completed manually.
 
 ---
 
@@ -261,12 +262,12 @@ This project showcases:
 
 Through this project, I strengthened my understanding of:
 
-* Building immersive web experiences
-* Creating presentation-driven interfaces
-* Responsive design implementation
-* Interactive content architecture
-* Modern UI/UX principles
-* Real-world project deployment
+* Interactive web experiences
+* Sales-driven digital storytelling
+* Responsive design principles
+* Modern UI/UX implementation
+* Client-facing presentation platforms
+* Real-world deployment workflows
 
 ---
 
@@ -276,7 +277,7 @@ Through this project, I strengthened my understanding of:
 
 Computer Science Graduate
 
-Passionate about Artificial Intelligence, Data Science, Machine Learning, Web Development, and creating impactful digital experiences.
+Passionate about Artificial Intelligence, Machine Learning, Data Science, Web Development, and building impactful digital experiences.
 
 ### Technical Skills
 
@@ -292,9 +293,9 @@ Passionate about Artificial Intelligence, Data Science, Machine Learning, Web De
 
 # 📄 License
 
-This project was created as part of a technical screening assignment and portfolio showcase.
+This project was developed as part of a technical assessment and portfolio showcase.
 
----
+All trademarks and brand references belong to their respective owners.
 
 ---
 
@@ -310,12 +311,13 @@ Built with ❤️ by **Deep Kumar**
 
 <br>
 
-**HTML • CSS • JavaScript • Responsive Design • Interactive Storytelling**
+🌐 Live Demo: https://startling-strudel-5a25ae.netlify.app/
+
 
 <br>
 
 ⭐ If you found this project interesting, consider starring the repository.
 
-🚀 Always building, always learning.
+🚀 Always Building • Always Learning • Always Improving
 
 </div>
